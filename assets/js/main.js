@@ -41,6 +41,6 @@ function loadIntlInput_oq3j39q0() {
 		ipinfoToken: typeof ipinfoToken_oq3j39q0 === "undefined" ? "" : ipinfoToken_oq3j39q0,
 		onlyCountries: typeof onlyCountries_oq3j39q0 === "undefined" ? undefined : onlyCountries_oq3j39q0,
 		nationalMode: true,
-		utilsScript: "//d3q6uu7asevdsg.cloudfront.net/intl-tel-input/lib/libphonenumber/build/utils.js"
+		utilsScript: utilsScript
 	});
 }
