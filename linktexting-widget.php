@@ -2,7 +2,7 @@
 /* 
 Plugin Name: LinkTexting Widget
 Plugin URI: https://www.linktexting.com/ 
-Version: 1.4.4
+Version: 1.4.5
 Author: Brian Clark
 Description: A plugin for creating a text-to-dowload form for mobile apps 
 */  
@@ -22,11 +22,13 @@ function linktexting_shortcode( $atts ) {
 return        '<style type="text/css">'.
               '  .linkTextingButton_oq3j39q0 {'.
               '    background-color: '.$atts['button_color'].';'.
+              '    background: '.$atts['button_color'].';'.
               '    box-shadow: none;'.
               '    text-shadow: none;'.
               '  }'.
               '  .linkTextingButton_oq3j39q0:hover {'.
               '    background-color: '.$atts['button_color_hover'].';'.
+              '    background: '.$atts['button_color_hover'].';'.
               '    box-shadow: none;'.
               '    text-shadow: none;'.
               '  }'.
