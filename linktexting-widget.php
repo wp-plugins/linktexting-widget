@@ -2,7 +2,7 @@
 /* 
 Plugin Name: LinkTexting Widget
 Plugin URI: https://www.linktexting.com/ 
-Version: 1.3
+Version: 1.4
 Author: Brian Clark
 Description: A plugin for creating a text-to-dowload form for mobile apps 
 */  
