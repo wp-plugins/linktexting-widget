@@ -2,7 +2,7 @@
 /* 
 Plugin Name: LinkTexting Widget
 Plugin URI: https://www.linktexting.com/ 
-Version: 1.4.3
+Version: 1.4.4
 Author: Brian Clark
 Description: A plugin for creating a text-to-dowload form for mobile apps 
 */  
@@ -50,8 +50,8 @@ function addStyle() {
 }
 
 function addScripts() {
-       wp_register_script( 'utils', plugins_url('/assets/js/utils.js', __FILE__) );
-       wp_enqueue_script( 'main', plugins_url('/assets/js/main.js', __FILE__), array( 'jquery', 'utils' ) );
+       wp_register_script( 'utilsScript', plugins_url('/assets/js/utils.js', __FILE__) );
+       wp_enqueue_script( 'main', plugins_url('/assets/js/main.js', __FILE__), array( 'jquery', 'utilsScript' ) );
 }
 
 add_action('wp_enqueue_scripts', 'addStyle');
