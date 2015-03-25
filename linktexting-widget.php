@@ -20,7 +20,8 @@ function linktexting_shortcode( $atts ) {
 
        // Code
 return        '<script type="text/javascript">'.
-              '  var utilsScript = "'.plugins_url('/assets/js/utils.js', __FILE__).'"'.
+              '  var utilsScript = "'.plugins_url('/assets/js/utils.js', __FILE__).'";'.
+              '  loadIntlInput_oq3j39q0();'.
               '</script>'.
               '<style type="text/css">'.
               '  .linkTextingButton_oq3j39q0 {'.
