@@ -2,9 +2,9 @@
 Contributors: LinkTexting
 Donate link: https://www.linktexting.com/
 Tags: LinkTexting, Link, Text, SMS, download, mobile, app
-Requires at least: 1.1
-Tested up to: 1.1
-Stable tag: 1.1
+Requires at least: 1.3
+Tested up to: 1.3
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,7 +44,7 @@ Make sure to have a comma separated list of every domain you use
 = 1.0 =
 * Initial release
 
-= 1.1 =
+= 1.3 =
 * Bug fixes
 
 == Upgrade Notice ==
@@ -52,5 +52,5 @@ Make sure to have a comma separated list of every domain you use
 = 1.0 =
 Initial release
 
-= 1.1 =
+= 1.3 =
 Bug fixes
