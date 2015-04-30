@@ -1,6 +1,6 @@
 <?php
 /* 
-Plugin Name: LinkTexting Widget
+Plugin Name: LinkTexting
 Plugin URI: https://www.linktexting.com/ 
 Version: 2.0
 Author: Brian Clark
