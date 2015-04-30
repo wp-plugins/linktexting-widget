@@ -3,8 +3,8 @@ Contributors: LinkTexting
 Donate link: https://www.linktexting.com/
 Tags: LinkTexting, Link, Text, SMS, download, mobile, app
 Requires at least: 3.0
-Tested up to: 4.1.1
-Stable tag: 1.4.5
+Tested up to: 4.2.1
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,15 +16,10 @@ LinkTexting is a text-to-download service for your users to text themselves a do
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload `linktexting-wdiget.php` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Sign up at LinkTexting.com and create a link
-4. Get the Link ID
-5. Use and customize our widget
+1. Install 'linktexting-widget.zip' on the 'Plugins' menu in Wordpress then activate it
+2. Sign up at LinkTexting.com and create a link
+3. Get the Link ID
+4. Use and customize our widget
 
 [linktexting linkid="Your_Link_ID" button_color="#aaa" button_color_hover="#666"]
 
@@ -39,6 +34,10 @@ Make sure to have a comma separated list of every domain you use
 
 1. The active and properly working LinkTexting widget
 
+2. LinkTexting on Hinge
+
+3. LinkTexting on Meerkat
+
 == Changelog ==
 
 = 1.0 =
@@ -47,6 +46,9 @@ Make sure to have a comma separated list of every domain you use
 = 1.3 =
 * Bug fixes
 
+= 2.0 = 
+Support multiple widgets on one page
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -54,3 +56,6 @@ Initial release
 
 = 1.3 =
 Bug fixes
+
+= 2.0 = 
+Support multiple widgets on one page
