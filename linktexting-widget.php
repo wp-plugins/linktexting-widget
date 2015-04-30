@@ -2,7 +2,7 @@
 /* 
 Plugin Name: LinkTexting Widget
 Plugin URI: https://www.linktexting.com/ 
-Version: 1.0
+Version: 2.0
 Author: Brian Clark
 Description: A plugin for creating a text-to-dowload form for mobile apps 
 */  
@@ -19,29 +19,28 @@ function linktexting_shortcode( $atts ) {
        );
 
        // Code
-return        '<script type="text/javascript">'.
-              '  var utilsScript = "'.plugins_url('/assets/js/utils.js', __FILE__).'"'.
-              '</script>'.
-              '<style type="text/css">'.
+return        '<style type="text/css">'.
               '  .linkTextingButton_oq3j39q0 {'.
               '    background-color: '.$atts['button_color'].';'.
+              '    background: '.$atts['button_color'].';'.
               '    box-shadow: none;'.
               '    text-shadow: none;'.
               '  }'.
               '  .linkTextingButton_oq3j39q0:hover {'.
               '    background-color: '.$atts['button_color_hover'].';'.
+              '    background: '.$atts['button_color_hover'].';'.
               '    box-shadow: none;'.
               '    text-shadow: none;'.
               '  }'.
               '</style>'.
-              '<div class="linkTexting_oq3j39q0" style="margin:0;">'.
-              '  <div class="linkTextingInner_oq3j39q0" style="margin:0;">'.
-              '    <input class="linkTextingInput_oq3j39q0" type="tel" id="numberToText_linkTexting_oq3j39q0_'.$atts['linkid'].'"></input>'.
-              '    <button class="linkTextingButton_oq3j39q0" type="button" onclick="sendLink_linkTexting_oq3j39q0(\''.$atts['linkid'].'\')" id="sendButton_linkTexting_oq3j39q0_'.$atts['linkid'].'">Text me a link</button>'.
-              '    <div class="linkTextingError_oq3j39q0" id="linkTextingError_oq3j39q0_'.$atts['linkid'].'" style="display:none;"></div>'.
+              '<div class="linkTextingWidget" style="margin:0;">'.
+              '  <div class="linkTextingInner" style="margin:0;">'.
+              '    <input type="hidden" class="linkID" value="'.$atts['linkid'].'">'.
+              '    <input class="linkTextingInput" type="tel"></input>'.
+              '    <button class="linkTextingButton" type="button">Text me a link</button>'.
+              '    <div class="linkTextingError" style="display:none;"></div>'.
               '  </div>'.
               '</div>';
-  
 }
 
 function addStyle() {
@@ -49,11 +48,17 @@ function addStyle() {
 }
 
 function addScripts() {
-       wp_enqueue_script( 'main', plugins_url('/assets/js/main.js', __FILE__), array( 'jquery' ) );
+       wp_register_script( 'utilsScript', plugins_url('/assets/js/utils.js', __FILE__) );
+       wp_register_script( 'main', plugins_url('/assets/js/main.js', __FILE__) );
+       $translation_array = array(
+              'plugins_url' => __( plugins_url(), 'plugin-domain' )
+       );
+       wp_localize_script( 'main', 'utils', $translation_array );
+       wp_enqueue_script( 'main', plugins_url('/assets/js/main.js', __FILE__), array( 'jquery', 'utilsScript' ) );
 }
 
 add_action('wp_enqueue_scripts', 'addStyle');
 add_action('wp_footer', 'addScripts');
-add_shortcode( 'linktexting', 'linktexting_shortcode' );
+add_shortcode('linktexting', 'linktexting_shortcode');
 
 ?>
