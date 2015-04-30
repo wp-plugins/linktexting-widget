@@ -32,9 +32,8 @@ Make sure to have a comma separated list of every domain you use
 
 == Screenshots ==
 
-1. The active and properly working LinkTexting widget
-2. LinkTexting on Hinge
-3. LinkTexting on Meerkat
+1. LinkTexting on Hinge
+2. LinkTexting on Meerkat
 
 == Changelog ==
 
