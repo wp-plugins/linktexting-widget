@@ -8,7 +8,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Install a text-to-download widget for your wordpress site
+LinkTexting let's you install a text-to-download widget for your wordpress site
 
 == Description ==
 
